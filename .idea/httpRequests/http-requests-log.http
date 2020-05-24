@@ -1,0 +1,12 @@
+GET http://localhost:8080
+Accept: text/plain
+
+<> 2020-05-24T085715.200.txt
+
+###
+
+GET http://localhost:8080
+Accept: text/plain
+
+###
+
