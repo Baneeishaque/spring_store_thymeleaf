@@ -1,4 +1,51 @@
 GET http://localhost:8080
+Accept: text/html
+
+<> 2020-05-24T100634.200.html
+
+###
+
+GET http://localhost:8080
+Accept: text/plain
+
+<> 2020-05-24T091429.200.txt
+
+###
+
+GET http://localhost:8080
+Accept: text/plain
+
+###
+
+GET http://localhost:8080
+Accept: text/plain
+
+<> 2020-05-24T091346.200.txt
+
+###
+
+GET http://localhost:8080
+Accept: text/plain
+
+<> 2020-05-24T091242.200.txt
+
+###
+
+GET http://localhost:8080
+Accept: text/plain
+
+<> 2020-05-24T091227.200.txt
+
+###
+
+GET http://localhost:8080
+Accept: text/plain
+
+<> 2020-05-24T091158.200.txt
+
+###
+
+GET http://localhost:8080
 Accept: text/plain
 
 <> 2020-05-24T085715.200.txt

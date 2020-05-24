@@ -1,4 +1,4 @@
 GET http://{{host}}:{{port}}
-Accept: text/plain
+Accept: text/html
 
 ###
