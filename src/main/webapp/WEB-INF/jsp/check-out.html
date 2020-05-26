@@ -70,7 +70,7 @@
             <div class="row">
                 <div class="col-lg-2 col-md-2">
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="index.jsp">
                             <img alt="" src="img/logo.png">
                         </a>
                     </div>
@@ -162,7 +162,7 @@
             </div>
             <nav class="nav-menu mobile-menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./home.html">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="#">Collection</a>
                         <ul class="dropdown">
@@ -197,9 +197,9 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcrumb-text product-more">
-                    <a href="./home.html"><i class="fa fa-home"></i> Home</a>
+                    <a href="index.jsp"><i class="fa fa-home"></i> Home</a>
                     <a href="shop.html">Shop</a>
-                    <span>Shopping Cart</span>
+                    <span>Check Out</span>
                 </div>
             </div>
         </div>
@@ -208,100 +208,103 @@
 <!-- Breadcrumb Section Begin -->
 
 <!-- Shopping Cart Section Begin -->
-<section class="shopping-cart spad">
+<section class="checkout-section spad">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="cart-table">
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>Image</th>
-                            <th class="p-name">Product Name</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Total</th>
-                            <th><i class="ti-close"></i></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td class="cart-pic first-row"><img alt="" src="img/cart-page/product-1.jpg"></td>
-                            <td class="cart-title first-row">
-                                <h5>Pure Pineapple</h5>
-                            </td>
-                            <td class="p-price first-row">$60.00</td>
-                            <td class="qua-col first-row">
-                                <div class="quantity">
-                                    <div class="pro-qty">
-                                        <input type="text" value="1">
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="total-price first-row">$60.00</td>
-                            <td class="close-td first-row"><i class="ti-close"></i></td>
-                        </tr>
-                        <tr>
-                            <td class="cart-pic"><img alt="" src="img/cart-page/product-2.jpg"></td>
-                            <td class="cart-title">
-                                <h5>American lobster</h5>
-                            </td>
-                            <td class="p-price">$60.00</td>
-                            <td class="qua-col">
-                                <div class="quantity">
-                                    <div class="pro-qty">
-                                        <input type="text" value="1">
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="total-price">$60.00</td>
-                            <td class="close-td"><i class="ti-close"></i></td>
-                        </tr>
-                        <tr>
-                            <td class="cart-pic"><img alt="" src="img/cart-page/product-3.jpg"></td>
-                            <td class="cart-title">
-                                <h5>Guangzhou sweater</h5>
-                            </td>
-                            <td class="p-price">$60.00</td>
-                            <td class="qua-col">
-                                <div class="quantity">
-                                    <div class="pro-qty">
-                                        <input type="text" value="1">
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="total-price">$60.00</td>
-                            <td class="close-td"><i class="ti-close"></i></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="cart-buttons">
-                            <a class="primary-btn continue-shop" href="#">Continue shopping</a>
-                            <a class="primary-btn up-cart" href="#">Update cart</a>
+        <form action="#" class="checkout-form">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="checkout-content">
+                        <a class="content-btn" href="#">Click Here To Login</a>
+                    </div>
+                    <h4>Biiling Details</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label for="fir">First Name<span>*</span></label>
+                            <input id="fir" type="text">
                         </div>
-                        <div class="discount-coupon">
-                            <h6>Discount Codes</h6>
-                            <form action="#" class="coupon-form">
-                                <input placeholder="Enter your codes" type="text">
-                                <button class="site-btn coupon-btn" type="submit">Apply</button>
-                            </form>
+                        <div class="col-lg-6">
+                            <label for="last">Last Name<span>*</span></label>
+                            <input id="last" type="text">
+                        </div>
+                        <div class="col-lg-12">
+                            <label for="cun-name">Company Name</label>
+                            <input id="cun-name" type="text">
+                        </div>
+                        <div class="col-lg-12">
+                            <label for="cun">Country<span>*</span></label>
+                            <input id="cun" type="text">
+                        </div>
+                        <div class="col-lg-12">
+                            <label for="street">Street Address<span>*</span></label>
+                            <input class="street-first" id="street" type="text">
+                            <input type="text">
+                        </div>
+                        <div class="col-lg-12">
+                            <label for="zip">Postcode / ZIP (optional)</label>
+                            <input id="zip" type="text">
+                        </div>
+                        <div class="col-lg-12">
+                            <label for="town">Town / City<span>*</span></label>
+                            <input id="town" type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="email">Email Address<span>*</span></label>
+                            <input id="email" type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="phone">Phone<span>*</span></label>
+                            <input id="phone" type="text">
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="create-item">
+                                <label for="acc-create">
+                                    Create an account?
+                                    <input id="acc-create" type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 offset-lg-4">
-                        <div class="proceed-checkout">
-                            <ul>
-                                <li class="subtotal">Subtotal <span>$240.00</span></li>
-                                <li class="cart-total">Total <span>$240.00</span></li>
+                </div>
+                <div class="col-lg-6">
+                    <div class="checkout-content">
+                        <input placeholder="Enter Your Coupon Code" type="text">
+                    </div>
+                    <div class="place-order">
+                        <h4>Your Order</h4>
+                        <div class="order-total">
+                            <ul class="order-table">
+                                <li>Product <span>Total</span></li>
+                                <li class="fw-normal">Combination x 1 <span>$60.00</span></li>
+                                <li class="fw-normal">Combination x 1 <span>$60.00</span></li>
+                                <li class="fw-normal">Combination x 1 <span>$120.00</span></li>
+                                <li class="fw-normal">Subtotal <span>$240.00</span></li>
+                                <li class="total-price">Total <span>$240.00</span></li>
                             </ul>
-                            <a class="proceed-btn" href="#">PROCEED TO CHECK OUT</a>
+                            <div class="payment-check">
+                                <div class="pc-item">
+                                    <label for="pc-check">
+                                        Cheque Payment
+                                        <input id="pc-check" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="pc-item">
+                                    <label for="pc-paypal">
+                                        Paypal
+                                        <input id="pc-paypal" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="order-btn">
+                                <button class="site-btn place-btn" type="submit">Place Order</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 </section>
 <!-- Shopping Cart Section End -->

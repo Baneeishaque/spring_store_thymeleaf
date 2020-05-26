@@ -70,7 +70,7 @@
             <div class="row">
                 <div class="col-lg-2 col-md-2">
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="index.jsp">
                             <img alt="" src="img/logo.png">
                         </a>
                     </div>
@@ -162,7 +162,7 @@
             </div>
             <nav class="nav-menu mobile-menu">
                 <ul>
-                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="index.jsp">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="#">Collection</a>
                         <ul class="dropdown">
@@ -171,7 +171,7 @@
                             <li><a href="#">Kid's</a></li>
                         </ul>
                     </li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li class="active"><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="#">Pages</a>
                         <ul class="dropdown">
@@ -196,10 +196,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="breadcrumb-text product-more">
-                    <a href="index.html"><i class="fa fa-home"></i> Home</a>
-                    <a href="shop.html">Shop</a>
-                    <span>Check Out</span>
+                <div class="breadcrumb-text">
+                    <a href="#"><i class="fa fa-home"></i> Home</a>
+                    <span>Blog</span>
                 </div>
             </div>
         </div>
@@ -207,107 +206,177 @@
 </div>
 <!-- Breadcrumb Section Begin -->
 
-<!-- Shopping Cart Section Begin -->
-<section class="checkout-section spad">
+<!-- Blog Section Begin -->
+<section class="blog-section spad">
     <div class="container">
-        <form action="#" class="checkout-form">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="checkout-content">
-                        <a class="content-btn" href="#">Click Here To Login</a>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1">
+                <div class="blog-sidebar">
+                    <div class="search-form">
+                        <h4>Search</h4>
+                        <form action="#">
+                            <input placeholder="Search . . .  " type="text">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
                     </div>
-                    <h4>Biiling Details</h4>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <label for="fir">First Name<span>*</span></label>
-                            <input id="fir" type="text">
-                        </div>
-                        <div class="col-lg-6">
-                            <label for="last">Last Name<span>*</span></label>
-                            <input id="last" type="text">
-                        </div>
-                        <div class="col-lg-12">
-                            <label for="cun-name">Company Name</label>
-                            <input id="cun-name" type="text">
-                        </div>
-                        <div class="col-lg-12">
-                            <label for="cun">Country<span>*</span></label>
-                            <input id="cun" type="text">
-                        </div>
-                        <div class="col-lg-12">
-                            <label for="street">Street Address<span>*</span></label>
-                            <input class="street-first" id="street" type="text">
-                            <input type="text">
-                        </div>
-                        <div class="col-lg-12">
-                            <label for="zip">Postcode / ZIP (optional)</label>
-                            <input id="zip" type="text">
-                        </div>
-                        <div class="col-lg-12">
-                            <label for="town">Town / City<span>*</span></label>
-                            <input id="town" type="text">
-                        </div>
-                        <div class="col-lg-6">
-                            <label for="email">Email Address<span>*</span></label>
-                            <input id="email" type="text">
-                        </div>
-                        <div class="col-lg-6">
-                            <label for="phone">Phone<span>*</span></label>
-                            <input id="phone" type="text">
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="create-item">
-                                <label for="acc-create">
-                                    Create an account?
-                                    <input id="acc-create" type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
+                    <div class="blog-catagory">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Travel</a></li>
+                            <li><a href="#">Picnic</a></li>
+                            <li><a href="#">Model</a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="checkout-content">
-                        <input placeholder="Enter Your Coupon Code" type="text">
-                    </div>
-                    <div class="place-order">
-                        <h4>Your Order</h4>
-                        <div class="order-total">
-                            <ul class="order-table">
-                                <li>Product <span>Total</span></li>
-                                <li class="fw-normal">Combination x 1 <span>$60.00</span></li>
-                                <li class="fw-normal">Combination x 1 <span>$60.00</span></li>
-                                <li class="fw-normal">Combination x 1 <span>$120.00</span></li>
-                                <li class="fw-normal">Subtotal <span>$240.00</span></li>
-                                <li class="total-price">Total <span>$240.00</span></li>
-                            </ul>
-                            <div class="payment-check">
-                                <div class="pc-item">
-                                    <label for="pc-check">
-                                        Cheque Payment
-                                        <input id="pc-check" type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
+                    <div class="recent-post">
+                        <h4>Recent Post</h4>
+                        <div class="recent-blog">
+                            <a class="rb-item" href="#">
+                                <div class="rb-pic">
+                                    <img alt="" src="img/blog/recent-1.jpg">
                                 </div>
-                                <div class="pc-item">
-                                    <label for="pc-paypal">
-                                        Paypal
-                                        <input id="pc-paypal" type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
+                                <div class="rb-text">
+                                    <h6>The Personality Trait That Makes...</h6>
+                                    <p>Fashion <span>- May 19, 2019</span></p>
                                 </div>
-                            </div>
-                            <div class="order-btn">
-                                <button class="site-btn place-btn" type="submit">Place Order</button>
-                            </div>
+                            </a>
+                            <a class="rb-item" href="#">
+                                <div class="rb-pic">
+                                    <img alt="" src="img/blog/recent-2.jpg">
+                                </div>
+                                <div class="rb-text">
+                                    <h6>The Personality Trait That Makes...</h6>
+                                    <p>Fashion <span>- May 19, 2019</span></p>
+                                </div>
+                            </a>
+                            <a class="rb-item" href="#">
+                                <div class="rb-pic">
+                                    <img alt="" src="img/blog/recent-3.jpg">
+                                </div>
+                                <div class="rb-text">
+                                    <h6>The Personality Trait That Makes...</h6>
+                                    <p>Fashion <span>- May 19, 2019</span></p>
+                                </div>
+                            </a>
+                            <a class="rb-item" href="#">
+                                <div class="rb-pic">
+                                    <img alt="" src="img/blog/recent-4.jpg">
+                                </div>
+                                <div class="rb-text">
+                                    <h6>The Personality Trait That Makes...</h6>
+                                    <p>Fashion <span>- May 19, 2019</span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-tags">
+                        <h4>Product Tags</h4>
+                        <div class="tag-item">
+                            <a href="#">Towel</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Coat</a>
+                            <a href="#">Dresses</a>
+                            <a href="#">Trousers</a>
+                            <a href="#">Men's hats</a>
+                            <a href="#">Backpack</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </form>
+            <div class="col-lg-9 order-1 order-lg-2">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="blog-item">
+                            <div class="bi-pic">
+                                <img alt="" src="img/blog/blog-1.jpg">
+                            </div>
+                            <div class="bi-text">
+                                <a href="blog-details.html">
+                                    <h4>The Personality Trait That Makes People Happier</h4>
+                                </a>
+                                <p>travel <span>- May 19, 2019</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="blog-item">
+                            <div class="bi-pic">
+                                <img alt="" src="img/blog/blog-2.jpg">
+                            </div>
+                            <div class="bi-text">
+                                <a href="blog-details.html">
+                                    <h4>This was one of our first days in Hawaii last week.</h4>
+                                </a>
+                                <p>Fashion <span>- May 19, 2019</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="blog-item">
+                            <div class="bi-pic">
+                                <img alt="" src="img/blog/blog-3.jpg">
+                            </div>
+                            <div class="bi-text">
+                                <a href="blog-details.html">
+                                    <h4>Last week I had my first work trip of the year to Sonoma Valley</h4>
+                                </a>
+                                <p>travel <span>- May 19, 2019</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="blog-item">
+                            <div class="bi-pic">
+                                <img alt="" src="img/blog/blog-4.jpg">
+                            </div>
+                            <div class="bi-text">
+                                <a href="blog-details.html">
+                                    <h4>Happppppy New Year! I know I am a little late on this post</h4>
+                                </a>
+                                <p>Fashion <span>- May 19, 2019</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="blog-item">
+                            <div class="bi-pic">
+                                <img alt="" src="img/blog/blog-5.jpg">
+                            </div>
+                            <div class="bi-text">
+                                <a href="blog-details.html">
+                                    <h4>Absolue collection. The Lancome team has been one…</h4>
+                                </a>
+                                <p>Model <span>- May 19, 2019</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="blog-item">
+                            <div class="bi-pic">
+                                <img alt="" src="img/blog/blog-6.jpg">
+                            </div>
+                            <div class="bi-text">
+                                <a href="blog-details.html">
+                                    <h4>Writing has always been kind of therapeutic for me</h4>
+                                </a>
+                                <p>Fashion <span>- May 19, 2019</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="loading-more">
+                            <i class="icon_loading"></i>
+                            <a href="#">
+                                Loading More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
-<!-- Shopping Cart Section End -->
+<!-- Blog Section End -->
 
 <!-- Partner Logo Section Begin -->
 <div class="partner-logo">
