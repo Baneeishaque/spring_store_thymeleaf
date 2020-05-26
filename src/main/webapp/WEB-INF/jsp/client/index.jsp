@@ -70,7 +70,7 @@
             <div class="row">
                 <div class="col-lg-2 col-md-2">
                     <div class="logo">
-                        <a href="index.jsp">
+                        <a href="${pageContext.request.contextPath}/">
                             <img alt="" src="img/logo.png">
                         </a>
                     </div>
@@ -164,7 +164,7 @@
             </div>
             <nav class="nav-menu mobile-menu">
                 <ul>
-                    <li class="active"><a href="index.jsp">Home</a></li>
+                    <li class="active"><a href="${pageContext.request.contextPath}/">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="#">Collection</a>
                         <ul class="dropdown">

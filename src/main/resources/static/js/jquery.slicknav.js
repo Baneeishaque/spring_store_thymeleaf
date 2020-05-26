@@ -1,6 +1,6 @@
 ;(function ($, document, window) {
     var
-        // default settings object.
+    // default settings object.
         defaults = {
             label: 'MENU',
             duplicate: true,
