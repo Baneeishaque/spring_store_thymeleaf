@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SpringEStoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="team-5-e-commerce" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="ndk.banee.spring_estore.SpringEStoreApplication" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
