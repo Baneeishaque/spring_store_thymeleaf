@@ -1,4 +1,4 @@
-#HELP.md
+HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
@@ -30,5 +30,4 @@ build/
 ### VS Code ###
 .vscode/
 
-#/.idea/libraries/
-/.idea/workspace.xml
+.idea/workspace.xml
