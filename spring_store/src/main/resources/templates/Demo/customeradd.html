@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/customer/save" method="post" th:object="${customer}">
+    <input type="hidden" name="id" th:value="${customeriid}"> <br/>
+    Name: <input type="text" name="username" th:value="${username}"> <br/>
+    password: <input type="password" name="passwords" th:value="${passwords}"> <br/>
+    FullName: <input type="text" name="fullName" th:value="${full_name}"> <br/>
+    Gender: <input type="text" name="gender" th:value="${gender}"> <br/>
+    phone: <input type="number" name="phone" th:value="${phone}"> <br/>
+    <input type="submit" VALUE="Submit">
+</form>
+
+</body>
+</html>

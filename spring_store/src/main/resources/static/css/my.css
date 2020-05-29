@@ -1,0 +1,89 @@
+.section-gap-top {
+  padding-top: 60px;
+}
+@media only screen and (min-width: 991px) {
+  .section-gap-top {
+    padding-top: 120px;
+  }
+}
+h1, h2, h3, h4, h5 {
+  font-family: "Playfair Display", serif;
+  color: #000000;
+  font-weight: bold;
+}
+.btn:hover, .btn:focus, .btn:active {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.btn.btn-primary {
+  background: #000000;
+  border: 1px solid #000000;
+  color: #fff;
+}
+.btn.btn-primary:hover {
+  background-color: #fff;
+  color: #000;
+}
+.btn {
+  height: auto;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 14px;
+  font-weight: 700;
+}
+.form-group label {
+  font-weight: 600;
+  color: #000;
+}
+.form-wrap {
+  padding: 40px;
+  background: #fff;
+  -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 8px;
+}
+
+.header_cs {
+  font-size: 20px;
+}
+
+
+.header_cs {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  padding: 1em 2em;
+  display: block;
+  text-decoration: none;
+}
+
+.header_cs:hover {
+  background-color: #000;
+  color: white;
+}
+
+.customer_checking .container .row ul {
+  display: flex;
+}
+
+.customer_checking .container .row ul li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
