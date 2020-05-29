@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+This is Product list. Below are the Products.
+
+<table border="1">
+    <thead>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Image</th>
+    <th>Description</th>
+    <th>Edit</th>
+    <th>Delete</th>
+    </thead>
+    <div><a th:href="@{add}">Add Product</a></div>
+    <tbody>
+    <tr th:each="pro:${product}">
+        <td th:text="${pro.name}"></td>
+        <td th:text="${pro.price}"></td>
+        <td th:img="${pro.image}" src="#" alt="product image" ></td>
+        <td th:text="${pro.description}"></td>
+        <td><a th:href="@{/edit(id=${pro.productid})}">Edit</a></td>
+        <td><a th:href="@{/delete(id=${pro.productid})}">Delete</a></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

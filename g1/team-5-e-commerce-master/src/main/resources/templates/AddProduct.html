@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{include/head::head}"></head>
+<link rel="stylesheet" th:href="@{/css/my.css}">
+
+<body>
+    <header th:replace="~{include/header::header}"></header>
+
+    <div class="section-gap-top bg-white aos-init aos-animate">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8 text-center">
+                    <h1 class="mb-3">Add Product</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 p-5 form-wrap">
+                    <form action="/save" method="post" th:object="${product}">
+
+                        <input type="hidden" name="id" id="productid" th:value="${productid}">
+                        <input type="hidden" name="id" th:value="${wishlistid}"> <br/>
+                        <input type="hidden" name="id" th:value="${adminid}"> <br/>
+
+                        <div class="form-group">
+                            <label for="name" class="label">Name</label>
+                            <input name="name" type="text" th:value="${name}" class="form-control" id="Name" placeholder="Name Of the Product"
+                                   required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description" class="label">Description</label>
+                            <input name="description" type="text" th:value="${description}" class="form-control" id="description" placeholder="Description Of the Product"
+                                   required>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label for="number" class="label">Price</label>
+                            <input name="price" type="number" th:value="${price}" class="form-control" id="number" placeholder="Price Of the Product"
+                                   required>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label for="image" class="label">Image</label>
+                            <input name="price" type="file" th:value="${image}" class="form-control" id="image" placeholder="Image Of the Product"
+                                   required>
+                        </div>
+
+                        <div class="mt-4 text-center">
+                            <div class="form-group">
+                                <input name="submit" type="submit" value="Submit"
+                                       class="btn btn-primary py-3 px-5">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer th:replace="~{include/footer::footer}"></footer>
+</body>
+</html>
