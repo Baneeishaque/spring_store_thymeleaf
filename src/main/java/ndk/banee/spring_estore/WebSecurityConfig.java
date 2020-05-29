@@ -19,7 +19,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         http.authorizeRequests()
                 //TODO : Use Spring MVC
-                .antMatchers("/", "/css/*", "/js/*", "/img/*","/img/*/*", "/fonts/*").permitAll()
+                .antMatchers("/", "/login", "/register", "/css/*", "/js/*", "/img/*", "/img/*/*", "/fonts/*").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
@@ -36,9 +36,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         UserDetails user =
                 User.withDefaultPasswordEncoder()
-                        .username("user")
+                        .username("username")
                         .password("password")
-                        .roles("USER")
+                        .roles("customer")
                         .build();
 
         return new InMemoryUserDetailsManager(user);
